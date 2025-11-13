@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element selector */
+        div {
+            color: rgb(255, 255, 255);
+        }
+
+        /* Group selector */
+        div,
+        p {
+            background-color: #acacdb;
+            font-size: 18px;
+        }
+
+        /* Class selector */
+        .blue {
+            color: #4646a5;
+            background-color: rgb(238, 211, 211);
+        }
+
+        /* ID selector */
+        #red {
+            color: rgb(41, 31, 31);
+            background-color: red;
+        }
+
+        /* Child selector */
+        div>p {
+            font-size: 18px;
+            background-color: antiquewhite;
+        }
+
+        /* Descendent selector ( Enabling this disabled the child selector CSS )*/
+        div p {
+            font-size: 16px;
+
+            background-color: lightgray;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selector */
+        a:visited {
+            color: rgb(195, 0, 255);
+        }
+
+        a:link {
+            color: rgb(13, 151, 59);
+        }
+
+        a:active {
+            background-color: khaki;
+        }
+
+        a:hover {
+            background-color: rgb(20, 19, 19);
+        }
+
+        p:first-child {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p> I'm first child</p>
+        <p> I'm second child</p>
+    </main>
+    <div>
+        Konnichiwa, sekai!
+        <p>
+            This is Japanese for "Hello, World!"
+        </p>
+        <article>
+            <p>
+                This is inside an article tag.
+            </p>
+        </article>
+    </div>
+    <p>
+        こんにちは、世界！
+    </p>
+    <div class="blue">
+        shuprovat, bishwo!
+    </div>
+    <div Id="red">
+        Hello, prithibi !
+    </div>
+    <a href="https://coddy.tech">Lets go</a>
+    <a href="https://www.typing.com/student/lessons">GO to type</a>
+    <a href="https://www.youtube.com">YOutube</a>
+
+</body>
+
+</html>

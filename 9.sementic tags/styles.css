@@ -1,0 +1,9 @@
+
+aside{
+    background-color: lightgrey;
+    width: 300px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+}

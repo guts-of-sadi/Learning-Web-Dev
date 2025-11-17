@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+        }  
+        .box{
+           
+            background-color: lightblue;
+        }
+        .box1{
+           color: salmon;
+           padding:10px;
+              margin:30px;
+              border:2px solid rgb(141, 73, 158);
+              height: 200px;
+              box-sizing: border-box;/* This changes the padding and border with the size of height*/
+        }   
+        .box2{
+           color: green;
+           padding:10px;
+              margin:25px;
+              border:2px solid rgb(107, 35, 13);
+              height: 200px;
+              box-sizing: border-box;
+           
+        }   
+         
+    </style>
+
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>

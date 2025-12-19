@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:hotpink;
+        }
+        .first-child{
+            color: #0bee0b; /* hex code for color */
+        }
+        div ol li:first-child{
+            color: rgb(112, 79, 79); /* RGB color */
+        }
+        #list2{
+            color: rgba(255, 0, 0, 0.5); /* RGBA color with transparency */
+        }
+        div ol li:last-child{
+            color:hsl(240, 50%, 50%)
+        }
+        .end{
+            background-color: darkgray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Colors</h1>
+    <p class="first-child">there are many properties for colors in CSS.</p>
+    <div>
+        <ol>
+            <li>lets have the color in RGB</li>
+            <li id="list2">lets have the color in RGBA</li>
+            <li>lets have the color in HSL</li>
+        </ol>
+    </div>
+    <p class="end">For now this is a simple example of color properties in CSS.</p>
+</body>
+</html>

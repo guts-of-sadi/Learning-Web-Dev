@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <style>
+        /* the specificity for this element selector is : 1 */
+        p {
+            color: indianred !important;
+            /*only this color will be applied because !importent overrites every other selectors*/
+            background-color: khaki;
+        }
+
+        /* the specificity for this class selector is : 10 */
+        .activate {
+            color: cadetblue;
+            background-color: lightblue;
+            /*only this background-color will be applied because the specificity is higher than element selector*/
+        }
+
+        /* the specificity for this class selector is : 10 */
+        .windows {
+            color: darkgreen;
+        }
+
+        /* the specificity for this class selector is : 10 */
+        .settings {
+            color: darkslategrey;
+
+        }
+
+        /* the specificity for this selector is : 1+10+10 = 21 */
+        p.activate.windows.settings {
+            color: indigo
+        }
+
+        /* the specificity for this selector is : 1+10 = 11 */
+        p.activate {
+            color: brown;
+        }
+
+        /* the specificity for this attribute selector is : 10 */
+        /* [windows=linux] {
+            color: blue
+        } */
+    </style>
+</head>
+
+<body>
+    <p class="activate windows settings" windows=linux>
+        this the part where we learn about cascade algorithm
+    </p>
+</body>
+
+</html>

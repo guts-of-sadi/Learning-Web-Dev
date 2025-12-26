@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        .size {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1280px; */
+            /*pixels depends on screen size or resolution and it will remain the same regardless of screen size */
+            width: 80vw;
+            /*vw = viewport width 30% of the viewport width.This means depending on screen size the 30% of the viewport width will be applied */
+
+            height: 5vh;
+            /*vh = viewport height 20% of the viewport height.This means depending on screen size the 20% of the viewport height will be applied */
+            color: whitesmoke;
+            margin: auto;
+            /* it will center the div horizontally */
+            background-color: palevioletred;
+        }
+
+        .another {
+            background-color: lightskyblue;
+            box-sizing: border-box;
+            border: 2px solid blue;
+            width: 80vw;
+            /* height: 50vh; */
+            margin: 20px auto;
+            /*20px top and bottom and auto for left and right */
+            font-size: 12px;
+            min-height: 80vh;
+            /* it will ensure that the div will not be less than 80vh */
+
+
+        }
+
+        .another > p{
+            box-sizing: border-box;
+            background-color: lightcoral;
+            font-size: 2em;
+            width:20%;
+            /*here p is child of another div so it will inherit the font size of another div which is 12px
+            so 2em means 2 times of 12px which is 24px */
+            /* font-size: 2rem; */
+            /*rem = root em means it will always refer to the root element font size which is html font size
+            here html font size is 18px so 2rem means 2 times of 18px which is 36px */
+        }
+        .another > div{
+            box-sizing: border-box;
+            border: 2px solid red;
+            width: 80%;/* it will take 80% of the parent element which is another div */
+            background-color: lightgrey;
+        }
+        .another > div > div{
+           box-sizing: border-box;
+              border: 2px solid orange;
+                width: 50%; /* it will take 50% of the parent element which is another div */
+                background-color: lightyellow;
+        }   
+
+        .last {
+            box-sizing: border-box;
+            border: 2px solid rgb(0, 174, 255);
+            background-color: rgb(59, 155, 59););
+            width: 80vw;
+            color:black;
+            margin: auto;
+            /* width: 80vmax;
+            /*vmax = viewport maximum means it will take the maximum value between viewport width and height
+            here if viewport width is 1000px and height is 800px then it will take 1000px for calculation */
+           /* height: 5vmin;
+            /*vmin = viewport minimum means it will take the minimum value between viewport width and height
+            here if viewport width is 1000px and height is 800px then it will take 800px for calculation */ 
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="size">
+        This is where we will learn about CSS Sizing Units.
+        like px, em, rem, %, vw, vh, vmin, vmax.
+
+    </div>
+    <div class="another">
+        <p>
+            This is just for em
+        </p>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique incidunt quidem nisi vel molestias sint
+            rerum
+            eveniet architecto, ipsam quaerat inventore repudiandae obcaecati facilis vitae, et necessitatibus voluptate
+            cupiditate, natus minus perspiciatis! Provident.
+             <div>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, reiciendis. Nobis, nesciunt? Incidunt fugiat reprehenderit dolor praesentium officia neque, doloribus rerum temporibus, consequatur tenetur, unde facilis beatae dolores. Quis reprehenderit perferendis ipsam doloremque beatae tempore, officia voluptate necessitatibus omnis tempora ducimus sed eius pariatur vel? Expedita aut odit quisquam quibusdam. Ratione sit quas culpa quaerat accusamus, aut quis, animi beatae magnam tempora, ipsam excepturi distinctio possimus sint. Veniam quis ex corporis ea voluptatem obcaecati velit labore deserunt minus tempora molestias officiis reprehenderit a eveniet, commodi repudiandae mollitia illo neque! Harum distinctio optio magni quam possimus aliquam, iusto atque praesentium inventore rerum nisi deleniti. Quam laudantium numquam placeat sit illum minima quia omnis ut provident commodi distinctio, quod et, reprehenderit, ratione debitis quidem expedita enim totam! Quod saepe excepturi fugit iure, similique consectetur eos id aut veritatis nam ad. Ut cumque similique deserunt vitae minus eligendi a esse, fugit distinctio quisquam? Dolores dolorum doloribus natus quasi sunt placeat maiores, odit error modi optio quaerat et, quis ex atque cupiditate sapiente. Quidem minus fuga corporis tempora asperiores explicabo omnis error rerum, dolor et accusantium. Eveniet veritatis facere voluptatibus praesentium. Soluta dignissimos reprehenderit nam rerum iusto 
+        </div>
+       
+    </div>
+    </div>
+    <div class="last">
+        This is a another box
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .block {
+            border: 2px solid black;
+            display: inline-block;
+            /* this makes the block element behave like an inline element */
+
+            margin: 5px;
+            padding: 10px;
+            background-color: lightblue;
+            color: dimgray;
+        }
+
+        .inline {
+            border: 2px solid black;
+
+            display: inline-block;
+            /*we are giving inline-block to inline element so that it can obey margin and padding or with the width and height*/
+
+            margin: 5px;
+            padding: 10px;
+            background-color: aliceblue;
+            color: dimgray;
+        }
+
+        .box {
+            display: inline-flex;
+            /* inline-flex makes the element a flex container but behaves like an inline element */
+
+            /* justify-content: center; */
+            /*only works with flex and grid*/
+
+            font-family: cursive;
+
+            /* display: none;*/
+            /*this will hide the element from the page with the space */
+
+            /* visibility: hidden; */
+            /*this will hide the element from the page without the space */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block box">
+        HEY this is a box.(div)block element
+    </div>
+
+    <div class="block">
+        HEY this is another box .(div)block element
+    </div>
+
+    <span class="inline">
+        hey this is a span element .inline element
+    </span>
+
+    <span class="inline">
+        hey this is another span element .inline element.
+
+    </span>
+
+</body>
+
+</html>

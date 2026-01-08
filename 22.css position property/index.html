@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: 3px;
+            padding: 3px;
+            width: 80vw;
+            height: 733px;
+        }
+
+        .box1 {
+            background-color: lightcoral;
+
+            position: absolute;
+            top: 0px;
+            left:2px;
+
+            /* position: sticky;
+            top: 0px;
+            height: 100px;
+            width: 100%;
+            margin: 0px;
+            padding:0px; */
+        }
+
+        .box2 {
+            background-color: lightseagreen;
+            /* position: relative;/* to enable top and left */
+            /* top: 70px;
+            left: 60px; */
+
+            /* bottom: 0px;
+            height: 100px;
+            position: fixed; */
+        }
+
+        .box3 {
+            background-color: lightblue;
+            /* position: relative;/* to enable z-index */
+            /* top: -200px; move up to overlap box2 */
+            /* z-index: 1; higher z-index to appear above box2 */
+
+        }
+
+        .box4 {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .parant {
+              /* position: absolute; */
+            border: 2px solid red;
+            background-color: navajowhite;
+            padding: 43px;
+            margin: 30px;
+            position: sticky;
+            top: 0px;
+
+             /* Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parant">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; /*These three lines center the card in the middle of the page*/
+            min-height: 100vh;
+            background-color: rgb(7, 175, 218);
+        }
+
+        .border {
+           
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 360px;
+            height: 500px;
+            margin: 4px;
+            padding: 1px;
+           
+        }
+
+        .luffy {
+            position: relative;
+            left: -1px;/*aligns the image to the left border of the card*/
+            background-size: cover;
+            margin: 5px;
+            padding: 19px;
+            border-radius: 10px;
+        }
+
+        .duffy {
+            color: #93a2a3;
+            position: relative;
+            top: 4px;/*moves the capsules down a bit*/
+            background-color: rgb(255, 255, 255);
+            font-size: 12px;
+            font-family: "Londrina Sketch", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin-left: 10px;/*spaces the capsules from the left border*/
+            border: 1px rgb(196, 158, 158) solid;
+            border-radius: 40px;
+            padding: 5px;
+            width: 60px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            box-shadow: 1px 2px 7px -1px #DC143C;
+        }
+
+        p {
+            font-family: "Londrina Sketch", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: grey;
+            margin-left: 10px;
+        }
+
+        h2 {
+            font-family: "Londrina Sketch", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin-left: 10px;
+        }
+
+        .button {
+            font-family: "Londrina Sketch", sans-serif;
+            width: 110px;
+            height: 40px;
+            background-color: rgb(128, 131, 175);
+            color: rgb(17, 34, 185);
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="border">
+        <div style="background-image: url(https://img.asmedia.epimg.net/resizer/v2/FJ54C73VRJMUZCAXXU7B6RKYNM.jpg?auth=a653163568169f55533323fbe5d5e02e8bf7afbca945209e58757f8556c791e4&width=644&height=362&smart=true); width: 313px; height: 200px;"
+            class="luffy">
+        </div>
+        <span class="duffy">
+            Captain
+        </span>
+        <span class="duffy">
+            Joyboy
+        </span>
+        <h2>Monkey D. Luffy</h2>
+        <p>
+            Monkey D. Luffy is the main protagonist of the One Piece series. He is the captain of the Straw Hat Pirates
+            and dreams of becoming the Pirate King by finding the legendary treasure known as One Piece.
+        </p>
+        <div class="button">
+            Read More. 
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

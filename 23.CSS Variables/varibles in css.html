@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color: purple;
+            --another-color: rgb(90, 48, 90);
+            --op: 0.6;
+            --width: 500px;
+            /*Global Variables.These are accessible throughout the document*/
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--another-color);
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        ul li {
+            --another-color: rgb(255, 255, 255);
+            /*Local Variable. This variable is only accessible within this selector*/
+            border: 2px solid var(--another-color, blue);
+            /*Fallback value is blue if --color is not defined or not found*/
+            list-style: none;
+            width: var(--width);
+            text-align: center;
+            padding: 20px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        ul li:first-child {
+            opacity: var(--op);
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, rerum voluptates? Expedita nesciunt sit minima
+        quae dolore perferendis impedit, quam nobis in eveniet. Inventore, odit harum ad quis itaque odio voluptatibus
+        adipisci, numquam a earum sunt. Architecto necessitatibus, recusandae optio nihil temporibus hic nam reiciendis
+        sunt. Modi, accusamus? Earum, ut?
+    </div>
+</body>
+
+</html>
